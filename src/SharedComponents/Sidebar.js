@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -6,36 +7,36 @@ const Sidebar = () => {
       <nav>
         <ul class="space-y-4">
           <li>
-            <a href="/jobs" class="main-menu menu-active" id="lws-alljobs-menu">
+            <Link to="/" class="main-menu menu-active" id="lws-alljobs-menu">
               <i class="fa-solid fa-briefcase"></i>
               <span> All Available Jobs</span>
-            </a>
+            </Link>
             <ul class="space-y-6 lg:space-y-2">
               <li>
-                <a class="sub-menu" href="/jobs/internship" id="lws-internship-menu">
+                <Link class="sub-menu" to="/jobs/internship" id="lws-internship-menu">
                   <i class="fa-solid fa-stop !text-[#FF5757]"></i>
                   Internship
-                </a>
+                </Link>
               </li>
               <li>
-                <a class="sub-menu" href="/jobs/fulltime" id="lws-fulltime-menu">
+                <Link class="sub-menu" to="/jobs/fulltime" id="lws-fulltime-menu">
                   <i class="fa-solid fa-stop !text-[#FF8A00]"></i>
                   Full Time
-                </a>
+                </Link>
               </li>
               <li>
-                <a class="sub-menu" href="/jobs/remote" id="lws-remote-menu">
+                <Link to="/jobs/remote" class="sub-menu" id="lws-remote-menu">
                   <i class="fa-solid fa-stop !text-[#56E5C4]"></i>
                   Remote
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/jobs" class="main-menu" id="lws-addJob-menu">
+            <Link to="/add-new-job" class="main-menu" id="lws-addJob-menu">
               <i class="fa-solid fa-file-circle-plus"></i>
               <span>Add NewJob</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

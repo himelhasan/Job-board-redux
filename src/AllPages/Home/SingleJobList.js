@@ -29,7 +29,7 @@ const SingleJobList = ({ job }) => {
           </div>
           <div class="lws-salary">
             <i class="fa-solid fa-bangladeshi-taka-sign text-slate-400 text-lg mr-1.5"></i>
-            BDT{salary}
+            BDT {salary}
           </div>
           <div class="lws-deadline">
             <i class="fa-regular fa-calendar text-slate-400 text-lg mr-1.5"></i>
